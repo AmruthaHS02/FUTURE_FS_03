@@ -1,56 +1,62 @@
-# FUTURE_FS_03
- Restaurant Business Website – Future Interns Task 3
-# Local Business Website – Restaurant Website
+Local Business Website – Coffee Shop Website
 
-This project is developed as part of the **Future Interns Full Stack Web Development Internship – Task 3**.
+This project is developed as part of the Future Interns Full Stack Web Development Internship – Task 3.
 
-## Project Overview
+Project Overview
 
-This project is a professional website designed for a restaurant business. The website helps customers explore the restaurant menu, place food orders, leave reviews, and generate an order bill.
+This project is a professional website designed for a coffee shop business. The website allows customers to explore a variety of coffee beverages, snacks, and starter items available on the menu.
 
-The goal of this project is to simulate a real-world business website that improves the online presence of a local restaurant and provides customers with a convenient way to interact with the business.
+The goal of this project is to simulate a real-world business website that improves the digital presence of a local coffee shop and provides customers with a convenient way to browse the menu, place orders, and share their experience.
 
-## Features
+Features
 
-• Attractive and responsive restaurant website design  
-• Menu section with 20+ food items including starters and main course  
-• Food ordering functionality  
-• Payment method selection (Cash / UPI / Card)  
-• Automatic bill generation after order  
-• Invoice download option  
-• Customer review system  
-• Image upload for food reviews  
+• Attractive and responsive coffee shop website design
+• Menu section with 20+ items including coffee, beverages, and starters
+• Food and beverage ordering functionality
+• Payment method selection (Cash / UPI / Card)
+• Customer review system
+• Image upload for customer reviews
+• Interactive and user-friendly interface
 
-## Technologies Used
+Technologies Used
 
-HTML5  
-CSS3  
-JavaScript  
+HTML5
+CSS3
+JavaScript
 
-## Skills Demonstrated
+Skills Demonstrated
 
-• Frontend web development  
-• User interface design  
-• JavaScript event handling  
-• Dynamic content generation  
-• Business website development  
+• Frontend web development
+• User interface and responsive design
+• JavaScript event handling
+• Dynamic content rendering
+• Business website development
 
-## Business Value
+Business Value
 
-This website helps a restaurant:
+This website helps a coffee shop:
 
-• Display their menu online  
-• Allow customers to place orders easily  
-• Build customer trust through reviews  
-• Improve digital presence  
+• Display its menu online
+• Allow customers to explore coffee and snack options
+• Enable customers to place orders easily
+• Build trust through customer reviews
+• Improve the shop's online presence
 
-## Author
+Live Project Pitch
 
-Amrutha H S  
-Computer Science Student  
+This project presents a professional website designed for a coffee shop business. The website allows customers to explore a variety of coffee beverages, snacks, and starter items available on the menu.
 
-GitHub  
-https://github.com/AmruthaHS02  
+Customers can browse the digital menu, place orders, choose their preferred payment method, and share their experiences through reviews, including image-based reviews.
 
-LinkedIn  
+By providing an attractive online menu and ordering interface, this website helps the coffee shop improve its digital presence, attract more customers, and offer a better and more convenient experience for visitors.
+
+Author
+
+Amrutha H S
+Computer Science Student
+
+GitHub
+https://github.com/AmruthaHS02
+
+LinkedIn
 https://www.linkedin.com/in/amrutha-h-s-884964281
