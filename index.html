@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Malnad Coffee House</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Malnad Coffee House</h1>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#menu">Menu</a>
+<a href="#cart">Order</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<section id="home" class="hero">
+
+<h2>Fresh Coffee From Chikkamagaluru</h2>
+<p>Authentic Malnad Coffee Experience</p>
+
+</section>
+
+
+<section id="about">
+
+<h2>About Us</h2>
+
+<p>
+Malnad Coffee House serves premium coffee sourced directly from coffee
+plantations in Chikkamagaluru. Enjoy freshly brewed coffee along with
+delicious starters and desserts in a relaxing environment.
+</p>
+
+</section>
+
+
+<section id="menu">
+
+<h2>Our Menu</h2>
+
+<div class="menu-container">
+
+<div class="card"><h3>Filter Coffee</h3><p>₹80</p><button onclick="addToCart('Filter Coffee',80)">Add</button></div>
+<div class="card"><h3>Espresso</h3><p>₹90</p><button onclick="addToCart('Espresso',90)">Add</button></div>
+<div class="card"><h3>Cappuccino</h3><p>₹120</p><button onclick="addToCart('Cappuccino',120)">Add</button></div>
+<div class="card"><h3>Latte</h3><p>₹130</p><button onclick="addToCart('Latte',130)">Add</button></div>
+<div class="card"><h3>Cold Coffee</h3><p>₹140</p><button onclick="addToCart('Cold Coffee',140)">Add</button></div>
+<div class="card"><h3>Mocha</h3><p>₹150</p><button onclick="addToCart('Mocha',150)">Add</button></div>
+<div class="card"><h3>Caramel Latte</h3><p>₹160</p><button onclick="addToCart('Caramel Latte',160)">Add</button></div>
+<div class="card"><h3>Vanilla Latte</h3><p>₹160</p><button onclick="addToCart('Vanilla Latte',160)">Add</button></div>
+
+<div class="card"><h3>French Fries</h3><p>₹150</p><button onclick="addToCart('French Fries',150)">Add</button></div>
+<div class="card"><h3>Cheese Sandwich</h3><p>₹140</p><button onclick="addToCart('Cheese Sandwich',140)">Add</button></div>
+<div class="card"><h3>Veg Burger</h3><p>₹160</p><button onclick="addToCart('Veg Burger',160)">Add</button></div>
+<div class="card"><h3>Chicken Burger</h3><p>₹180</p><button onclick="addToCart('Chicken Burger',180)">Add</button></div>
+<div class="card"><h3>Garlic Bread</h3><p>₹120</p><button onclick="addToCart('Garlic Bread',120)">Add</button></div>
+<div class="card"><h3>Paneer Wrap</h3><p>₹170</p><button onclick="addToCart('Paneer Wrap',170)">Add</button></div>
+<div class="card"><h3>Chicken Wrap</h3><p>₹190</p><button onclick="addToCart('Chicken Wrap',190)">Add</button></div>
+
+<div class="card"><h3>Chocolate Cake</h3><p>₹140</p><button onclick="addToCart('Chocolate Cake',140)">Add</button></div>
+<div class="card"><h3>Brownie</h3><p>₹120</p><button onclick="addToCart('Brownie',120)">Add</button></div>
+<div class="card"><h3>Ice Cream</h3><p>₹100</p><button onclick="addToCart('Ice Cream',100)">Add</button></div>
+<div class="card"><h3>Tiramisu</h3><p>₹180</p><button onclick="addToCart('Tiramisu',180)">Add</button></div>
+<div class="card"><h3>Cheesecake</h3><p>₹200</p><button onclick="addToCart('Cheesecake',200)">Add</button></div>
+<div class="card"><h3>Donuts</h3><p>₹90</p><button onclick="addToCart('Donuts',90)">Add</button></div>
+<div class="card"><h3>Croissant</h3><p>₹120</p><button onclick="addToCart('Croissant',120)">Add</button></div>
+<div class="card"><h3>Waffles</h3><p>₹160</p><button onclick="addToCart('Waffles',160)">Add</button></div>
+<div class="card"><h3>Pancakes</h3><p>₹150</p><button onclick="addToCart('Pancakes',150)">Add</button></div>
+<div class="card"><h3>Choco Lava Cake</h3><p>₹170</p><button onclick="addToCart('Choco Lava Cake',170)">Add</button></div>
+
+</div>
+
+</section>
+
+
+<section id="cart">
+
+<h2>Your Order</h2>
+
+<ul id="cartItems"></ul>
+
+<h3>Total: ₹<span id="totalPrice">0</span></h3>
+
+<button onclick="placeOrder()">Place Order</button>
+
+</section>
+
+<section id="payment">
+
+<h2>Payment</h2>
+
+<select id="paymentMethod">
+<option value="">Select Payment Method</option>
+<option value="UPI">UPI</option>
+<option value="Card">Credit/Debit Card</option>
+<option value="Cash">Cash on Delivery</option>
+</select>
+
+<input type="text" id="paymentDetails" placeholder="Enter UPI ID or Card Number">
+
+<button onclick="processPayment()">Pay Now</button>
+
+</section>
+
+<section id="billSection" style="display:none;">
+
+<h2>Order Receipt</h2>
+
+<div class="bill">
+
+<p><strong>Date:</strong> <span id="billDate"></span></p>
+
+<p><strong>Payment Method:</strong> <span id="billPayment"></span></p>
+
+<h3>Items Ordered</h3>
+
+<ul id="billItems"></ul>
+
+<h3>Total Paid: ₹<span id="billTotal"></span></h3>
+
+</div>
+
+</section>
+
+
+<section id="reviews">
+
+<h2>Customer Reviews</h2>
+
+<div class="review-form">
+
+<input type="text" id="customerName" placeholder="Your Name">
+
+<textarea id="reviewText" placeholder="Write your review"></textarea>
+
+<input type="file" id="reviewImage">
+
+<button onclick="addReview()">Submit Review</button>
+
+</div>
+
+<div id="reviewsContainer"></div>
+
+</section>
+
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<p>Email: malnadcoffee@gmail.com</p>
+<p>Phone: +91 9876543210</p>
+<p>Location: Chikkamagaluru, Karnataka</p>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Malnad Coffee House</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
